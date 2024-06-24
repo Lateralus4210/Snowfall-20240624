@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <!-- <link rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+                integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+                crossorigin="anonymous">  -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <button class="hamburger" id="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </button>
+
+    <div class="controls" id="controlPanel">
+        <br><br>
+
+        <input type="color" id="colorPicker" class="form-control form-control-color" value="#ffffff">
+        <br><br>
+
+        <label>
+            Circles:
+            <span id="numberOfCirclesValue">1</span>
+            <br>
+            <input type="range" id="numberOfCircles" min="1" max="100" value="1">
+        </label>
+        <br>
+
+        <label>
+            Size:
+            <span id="radiusValue">7</span>
+            <br>
+            <input type="range" id="radius" min="1" max="100" value="7">
+        </label>
+        <br>
+
+        <label>
+            Angular Speed:
+            <span id="angularSpeedValue">0.010</span>
+            <br>
+            <input type="range" id="angularSpeed" min="0.0001" max="5.001" step="0.001" value="0.010">
+        </label>
+        <br>
+
+        <label>
+            Linear Speed:
+            <span id="linearSpeedValue">1</span>
+            <br>
+            <input type="range" id="linearSpeed" min=".1" max="10" step=".1" value="1">
+        </label>
+        <br>
+        
+        <label>
+            Interval (ms):
+            <span id="intervalValue">1000</span>
+            <br>
+            <input type="range" id="interval" min="100" max="3000" step="100" value="1000">
+        </label>
+        <br>
+        
+        <label>
+            Spirals:
+            <span id="numberOfSpiralsValue">4</span>
+            <br>
+            <input type="range" id="numberOfSpirals" min="1" max="4" value="4">
+        </label>
+        <br>
+        
+        <label>
+            <input type="checkbox" id="collideKill"> Collide Kill
+        </label>
+        <br>
+        
+        <label>
+            <input type="checkbox" id="mandala"> Mandala
+        </label>
+        <br>
+        
+        <button id="reset">Reset</button>
+        <button id="pause">Pause</button>
+    </div>
+
+            
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="index.js"></script>
+</body>
+</html>
